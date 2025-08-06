@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "sidebar-left content sidebar-right"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      height: 100vh;
+      gap: 10px;
+      background-color: black;
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #b30000;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: orange;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar-left {
+      grid-area: sidebar-left;
+      background-color: #e06666;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: #ffa500;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .sidebar-right {
+      grid-area: sidebar-right;
+      background-color: #e06666;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #b30000;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Header</div>
+  <div class="nav">Menu Navigasi</div>
+  <div class="sidebar-left">Sidebar</div>
+  <div class="content">Content</div>
+  <div class="sidebar-right">Sidebar</div>
+  <div class="footer">Footer</div>
+</div>
+
+</body>
+</html>
